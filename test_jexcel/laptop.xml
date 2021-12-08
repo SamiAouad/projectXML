@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Laptops>
+    <laptop id="1">
+        <nom>Dell Inspiron 15-5518</nom>
+        <marque>DELL</marque>
+        <processeur>Intel Core i7</processeur>
+        <capStk>512 Go SSD</capStk>
+        <capRAM>16 Go</capRAM>
+        <tailleEcran>15.6</tailleEcran>
+    </laptop>
+    <laptop id="2">
+        <nom>Dell Inspiron 15-3000</nom>
+        <marque>DELL</marque>
+        <processeur>Intel Core i7</processeur>
+        <capStk>512 Go SSD</capStk>
+        <capRAM>16 Go</capRAM>
+        <tailleEcran>15.6</tailleEcran>
+    </laptop>
+    <laptop id="3">
+        <nom>Dell Inspiron 7706 </nom>
+        <marque>DELL</marque>
+        <processeur>Intel Core i7</processeur>
+        <capStk>512 Go SSD</capStk>
+        <capRAM>16 Go</capRAM>
+        <tailleEcran>17.0</tailleEcran>
+    </laptop>
+    <laptop id="4">
+        <nom>ZENBOOK-13-OLED</nom>
+        <marque>ASUS</marque>
+        <processeur>Intel Core i5�</processeur>
+        <capStk>512 Go SSD</capStk>
+        <capRAM>16 Go</capRAM>
+        <tailleEcran>15.6</tailleEcran>
+    </laptop>
+    <laptop id="5">
+        <nom> S415JA-EK128T</nom>
+        <marque>ASUS</marque>
+        <processeur>Intel Core i7</processeur>
+        <capStk>1 To SSD</capStk>
+        <capRAM>8 Go</capRAM>
+        <tailleEcran>14.0</tailleEcran>
+    </laptop>
+    <laptop id="6">
+        <nom>C433TA-AJ0035�</nom>
+        <marque>ASUS</marque>
+        <processeur>Intel Core m3�</processeur>
+        <capStk>128 Go</capStk>
+        <capRAM>8 Go</capRAM>
+        <tailleEcran>14.0</tailleEcran>
+    </laptop>
+    <laptop id="7">
+        <nom>Spectre</nom>
+        <marque>HP</marque>
+        <processeur>Intel Core i5</processeur>
+        <capStk>512 Go</capStk>
+        <capRAM>8 Go</capRAM>
+        <tailleEcran>13.5</tailleEcran>
+    </laptop>
+</Laptops>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<students>
+    <student CNE="B12">
+        <nom>nom1</nom>
+        <prenom>prenom1</prenom>
+        <dateDeNaiss>
+            <year>100</year>
+            <month>9</month>
+            <day>3</day>
+        </dateDeNaiss>
+        <email>prenom1@test.com</email>
+        <classeName>GINF1</classeName>
+        <phone>O600000000</phone>
+    </student>
+    <student CNE="B18">
+        <nom>nom2</nom>
+        <prenom>prenom2</prenom>
+        <dateDeNaiss>
+            <year>100</year>
+            <month>9</month>
+            <day>4</day>
+        </dateDeNaiss>
+        <email>prenom2@test.com</email>
+        <classeName>GINF1</classeName>
+        <phone>O600000001</phone>
+    </student>
+    <student CNE="D67">
+        <nom>nom5</nom>
+        <prenom>prenom5</prenom>
+        <dateDeNaiss>
+            <year>100</year>
+            <month>9</month>
+            <day>0</day>
+        </dateDeNaiss>
+        <email>prenom4@test.com</email>
+        <classeName>GINF1</classeName>
+        <phone>O600000004</phone>
+    </student>
+</students>
