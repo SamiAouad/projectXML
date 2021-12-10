@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<students>
+    <student CNE="B12">
+        <nom>nom1</nom>
+        <prenom>prenom1</prenom>
+        <dateDeNaiss>
+            <year>100</year>
+            <month>9</month>
+            <day>3</day>
+        </dateDeNaiss>
+        <email>prenom1@test.com</email>
+        <classeName>GINF2</classeName>
+        <phone>O600000000</phone>
+        <image>images/B12.jpg</image>
+    </student>
+    <student CNE="B18">
+        <nom>nom2</nom>
+        <prenom>prenom2</prenom>
+        <dateDeNaiss>
+            <year>100</year>
+            <month>9</month>
+            <day>4</day>
+        </dateDeNaiss>
+        <email>prenom2@test.com</email>
+        <classeName>GINF2</classeName>
+        <phone>O600000001</phone>
+        <image>images/B18.jpg</image>
+    </student>
+    <student CNE="A12">
+        <nom>nom3</nom>
+        <prenom>prenom3</prenom>
+        <dateDeNaiss>
+            <year>100</year>
+            <month>9</month>
+            <day>5</day>
+        </dateDeNaiss>
+        <email>prenom3@test.com</email>
+        <classeName>GINF2</classeName>
+        <phone>O600000002</phone>
+        <image>images/A12.jpg</image>
+    </student>
+    <student CNE="A78">
+        <nom>nom4</nom>
+        <prenom>prenom4</prenom>
+        <dateDeNaiss>
+            <year>100</year>
+            <month>9</month>
+            <day>6</day>
+        </dateDeNaiss>
+        <email>prenom@test.com</email>
+        <classeName>GINF2</classeName>
+        <phone>O600000003</phone>
+        <image>images/A78.jpg</image>
+    </student>
+    <student CNE="D67">
+        <nom>nom5</nom>
+        <prenom>prenom5</prenom>
+        <dateDeNaiss>
+            <year>100</year>
+            <month>9</month>
+            <day>0</day>
+        </dateDeNaiss>
+        <email>prenom4@test.com</email>
+        <classeName>GINF2</classeName>
+        <phone>O600000004</phone>
+        <image>images/D67.jpg</image>
+    </student>
+    <student CNE="Z33">
+        <nom>nom6</nom>
+        <prenom>prenom6</prenom>
+        <dateDeNaiss>
+            <year>100</year>
+            <month>9</month>
+            <day>1</day>
+        </dateDeNaiss>
+        <email>prenom5@test.com</email>
+        <classeName>GINF2</classeName>
+        <phone>O600000005</phone>
+        <image>images/Z33.jpg</image>
+    </student>
+    <student CNE="F34">
+        <nom>nom7</nom>
+        <prenom>prenom7</prenom>
+        <dateDeNaiss>
+            <year>100</year>
+            <month>9</month>
+            <day>2</day>
+        </dateDeNaiss>
+        <email>prenom6@test.com</email>
+        <classeName>GINF2</classeName>
+        <phone>O600000006</phone>
+        <image>images/F34.jpg</image>
+    </student>
+</students>

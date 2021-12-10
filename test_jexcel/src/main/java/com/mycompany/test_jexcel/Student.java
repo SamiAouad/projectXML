@@ -4,6 +4,7 @@
  */
 package com.mycompany.test_jexcel;
 
+import java.util.ArrayList;
 import java.util.Date;
 import org.apache.poi.ss.usermodel.Row;
 
@@ -15,19 +16,22 @@ public class Student {
     private String cne;
     private String nom;
     private String prenom;
-     private String email;
-     private String phone;
+    private String email;
+    private String phone;
    private Date date;
    private String classe;
+   private String image;
+   private ArrayList<Note> notes;
 
     public Student(Row row) {
         this.cne = row.getCell(0).getStringCellValue();
         this.nom =row.getCell(1).getStringCellValue();
         this.prenom = row.getCell(2).getStringCellValue();
+        this.date = row.getCell(3).getDateCellValue();
         this.email = row.getCell(4).getStringCellValue();
         this.classe = row.getCell(5).getStringCellValue();
         this.phone = row.getCell(6).getStringCellValue();
-        this.date = row.getCell(3).getDateCellValue();
+       this.image = "images/" + this.cne + ".jpg";
     }
 
     public String getCne() {
@@ -58,6 +62,12 @@ public class Student {
         return classe;
     }
 
-    
-    
+    public String getImage() {
+        return image;
+    }
+
+   public void ajouterNotes(String path){
+       
+   }
+
 }

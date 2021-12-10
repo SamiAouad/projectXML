@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<modules>
+    <module codeModule="null">
+        <moduleName>Math pour l’ingenieur</moduleName>
+        <element1>statistique</element1>
+        <element2>optimisation</element2>
+        <prof>Maouen</prof>
+        <dept>SIC</dept>
+        <codeFiliere>GINF1</codeFiliere>
+    </module>
+</modules>

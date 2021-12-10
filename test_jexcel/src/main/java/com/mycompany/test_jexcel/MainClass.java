@@ -4,7 +4,10 @@
  */
 package com.mycompany.test_jexcel;
 
+import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
+import javax.imageio.ImageIO;
 
 
 /**
@@ -14,9 +17,12 @@ import java.io.IOException;
 class MainClass {
     
     public static void main(String[] args) throws IOException{
-        Filiere store = new Filiere("GINF1", "test");
-        store.to_xml();
-        
+//        Filiere filiere = new Filiere("GINF1", "test");
+//        filiere.to_xml();
+            Ecole ensat = new Ecole("ensat", "modules");
+            ensat.addStudents("test");
+            ensat.addNotes("notes");
+            ensat.generer_xml_students();
     }
     
 }
