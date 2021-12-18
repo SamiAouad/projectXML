@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <modules>
-    <module codeModule="null">
-        <moduleName>Electronique de puissance</moduleName>
-        <element1>Electronique de puissance</element1>
-        <element2>machine</element2>
-        <prof>Derrhi</prof>
-        <dept>GEI</dept>
-        <codeFiliere>GSEA2</codeFiliere>
-    </module>
+<module codeModule="GSEA32" codeFiliere="GSEA2">
+<moduleName>Electronique de puissance</moduleName>
+<element1>Electronique de puissance</element1>
+<element2>machine</element2>
+<prof>Derrhi</prof>
+<dept>GEI</dept>
+</module>
 </modules>

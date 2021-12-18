@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT students (student+) >
+<!ELEMENT student (nom+,prenom+,dateDeNaiss,email,classeName,phone+) >
+
+<!ELEMENT nom (#PCDATA) >
+<!ELEMENT prenom (#PCDATA) >
+
+<!ELEMENT dateDeNaiss (year,month,day) >
+
+<!ELEMENT email (#PCDATA) >
+<!ELEMENT classeName (#PCDATA) >
+<!ELEMENT phone (#PCDATA) >
+
+<!ELEMENT year (#PCDATA) >
+<!ELEMENT month (#PCDATA) >
+<!ELEMENT day (#PCDATA) >
+
+<!ATTLIST student cne CDATA #REQUIRED >

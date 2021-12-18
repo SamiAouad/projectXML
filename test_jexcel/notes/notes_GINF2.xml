@@ -1,47 +1,69 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <notes>
-    <student cne="B12">
-        <module codeModule="GINF22">
-            <note1>17.0</note1>
-            <note2>18.0</note2>
-        </module>
-    </student>
-    <student cne="B18">
-        <module codeModule="GINF23">
-            <note1>16.0</note1>
-            <note2>17.0</note2>
-        </module>
-        <module codeModule="GINF22">
-            <note1>7.0</note1>
-            <note2>8.0</note2>
-        </module>
-    </student>
-    <student cne="A12">
-        <module codeModule="GINF23">
-            <note1>7.0</note1>
-            <note2>9.0</note2>
-        </module>
-    </student>
-    <student cne="A78"/>
-    <student cne="D67">
-        <module codeModule="GINF22">
-            <note1>17.0</note1>
-            <note2>20.0</note2>
-        </module>
-    </student>
-    <student cne="Z33">
-        <module codeModule="GINF23">
-            <note1>8.0</note1>
-            <note2>5.0</note2>
-        </module>
-        <module codeModule="GINF22">
-            <note1>12.0</note1>
-            <note2>12.0</note2>
-        </module>
-        <module codeModule="GINF22">
-            <note1>12.0</note1>
-            <note2>12.0</note2>
-        </module>
-    </student>
-    <student cne="F34"/>
+<student cne="B12">
+<module codeModule="GINF22">
+<note1>17.0</note1>
+<note2>18.0</note2>
+</module>
+<module codeModule="GINF21">
+<note1>16.0</note1>
+<note2>7.0</note2>
+</module>
+</student>
+<student cne="B18">
+<module codeModule="GINF23">
+<note1>16.0</note1>
+<note2>17.0</note2>
+</module>
+<module codeModule="GINF22">
+<note1>7.0</note1>
+<note2>8.0</note2>
+</module>
+</student>
+<student cne="A12">
+<module codeModule="GINF24">
+<note1>8.0</note1>
+<note2>18.0</note2>
+</module>
+<module codeModule="GINF23">
+<note1>7.0</note1>
+<note2>9.0</note2>
+</module>
+</student>
+<student cne="A78">
+<module codeModule="GINF21">
+<note1>12.0</note1>
+<note2>19.0</note2>
+</module>
+<module codeModule="GINF24">
+<note1>16.0</note1>
+<note2>10.0</note2>
+</module>
+</student>
+<student cne="D67">
+<module codeModule="GINF22">
+<note1>17.0</note1>
+<note2>20.0</note2>
+</module>
+<module codeModule="GINF21">
+<note1>15.0</note1>
+<note2>11.0</note2>
+</module>
+</student>
+<student cne="Z33">
+<module codeModule="GINF23">
+<note1>8.0</note1>
+<note2>5.0</note2>
+</module>
+<module codeModule="GINF22">
+<note1>5.0</note1>
+<note2>12.0</note2>
+</module>
+</student>
+<student cne="F34">
+<module codeModule="GINF24">
+<note1>6.0</note1>
+<note2>6.0</note2>
+</module>
+</student>
 </notes>
