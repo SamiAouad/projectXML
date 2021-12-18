@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT notes (student+) >
+<!ELEMENT student (module+) >
+
+<!ELEMENT module (note1, note2) >
+
+<!ELEMENT note1 (#PCDATA) >
+
+<!ELEMENT note2 (#PCDATA) >
+
+<!ATTLIST student cne CDATA #REQUIRED >
+
+<!ATTLIST module codeModule CDATA #REQUIRED >

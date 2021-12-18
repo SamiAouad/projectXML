@@ -15,6 +15,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.StringTokenizer;
 import javax.xml.stream.XMLOutputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamWriter;
@@ -100,7 +101,9 @@ public class Filiere {
                          notes_list.add(new Note(row));
                     }
                 }
-                
+                for (Student student : this.students_list){
+                    student.ajouterNotes(new Note(row));
+                }
             }
             fis.close();
         }catch(FileNotFoundException e){
@@ -120,13 +123,19 @@ public class Filiere {
                     xMLStreamWriter.writeStartElement("student");
                         xMLStreamWriter.writeAttribute("CNE", "" + p.getCne());
                         //================================
-                        xMLStreamWriter.writeStartElement("nom");
-                            xMLStreamWriter.writeCharacters(p.getNom());
-                        xMLStreamWriter.writeEndElement();
+                        StringTokenizer st = new StringTokenizer(p.getNom());
+                        while (st.hasMoreTokens()) {
+                            xMLStreamWriter.writeStartElement("nom");
+                                xMLStreamWriter.writeCharacters(st.nextToken());
+                            xMLStreamWriter.writeEndElement();
+                        }
                         //================================
-                        xMLStreamWriter.writeStartElement("prenom");
-                            xMLStreamWriter.writeCharacters(p.getPrenom());
-                        xMLStreamWriter.writeEndElement();
+                       st = new StringTokenizer(p.getPrenom());
+                        while (st.hasMoreTokens()) {
+                            xMLStreamWriter.writeStartElement("prenom");
+                                xMLStreamWriter.writeCharacters(st.nextToken());
+                            xMLStreamWriter.writeEndElement();
+                        }
                         //=======================================
                         xMLStreamWriter.writeStartElement("dateDeNaiss");
                             xMLStreamWriter.writeStartElement("year");
@@ -134,11 +143,11 @@ public class Filiere {
                             xMLStreamWriter.writeEndElement();
                             
                             xMLStreamWriter.writeStartElement("month");
-                                xMLStreamWriter.writeCharacters("" + p.getDate().getMonth());
+                                xMLStreamWriter.writeCharacters("" + p.getDate().getMonthValue());
                             xMLStreamWriter.writeEndElement();
                             
                             xMLStreamWriter.writeStartElement("day");
-                                xMLStreamWriter.writeCharacters("" + p.getDate().getDay());
+                                xMLStreamWriter.writeCharacters("" + p.getDate().getDayOfMonth());
                             xMLStreamWriter.writeEndElement();
                         xMLStreamWriter.writeEndElement();
                         //======================================
@@ -198,6 +207,7 @@ public class Filiere {
                 for (Module p : modules_list){
                     xMLStreamWriter.writeStartElement("module");
                         xMLStreamWriter.writeAttribute("codeModule", "" + p.getCodeModule());
+                        xMLStreamWriter.writeAttribute("codeFiliere", "" + p.getCodeFiliere());
                         //================================
                         xMLStreamWriter.writeStartElement("moduleName");
                             xMLStreamWriter.writeCharacters(p.getModuleName());
@@ -219,10 +229,6 @@ public class Filiere {
                             xMLStreamWriter.writeCharacters(p.getDept_attachement());
                         xMLStreamWriter.writeEndElement();
                         //======================================
-                        xMLStreamWriter.writeStartElement("codeFiliere");
-                            xMLStreamWriter.writeCharacters(p.getCodeFiliere());
-                        xMLStreamWriter.writeEndElement();
-                        //=======================
                         
                       xMLStreamWriter.writeEndElement();
                 }
@@ -262,10 +268,12 @@ public class Filiere {
             xMLStreamWriter.writeStartDocument("utf-8", "1.0");
             xMLStreamWriter.writeStartElement("notes");
                 for (Student student : students_list){
+                    if (student.sansNotes()){
+                        continue;
+                    }
                      xMLStreamWriter.writeStartElement("student");
                      xMLStreamWriter.writeAttribute("cne", student.getCne());
-                    for (Note note : notes_list){
-                           if (student.getCne().equals(note.getCne())){
+                    for (Note note : student.getNotes()){
                                 xMLStreamWriter.writeStartElement("module");
                                     xMLStreamWriter.writeAttribute("codeModule", note.getCodeModule());
                                     xMLStreamWriter.writeStartElement("note1");
@@ -276,7 +284,6 @@ public class Filiere {
                                         xMLStreamWriter.writeCharacters("" + note.getNote2());
                                      xMLStreamWriter.writeEndElement();
                                 xMLStreamWriter.writeEndElement();
-                           }
                     }
                       xMLStreamWriter.writeEndElement();
                 }
@@ -312,7 +319,6 @@ public class Filiere {
     public String getCode() {
         return code;
     }
-    
     
     
 }

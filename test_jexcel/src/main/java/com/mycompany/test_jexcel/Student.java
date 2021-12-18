@@ -4,6 +4,8 @@
  */
 package com.mycompany.test_jexcel;
 
+import java.time.LocalDate;
+import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.Date;
 import org.apache.poi.ss.usermodel.Row;
@@ -18,16 +20,17 @@ public class Student {
     private String prenom;
     private String email;
     private String phone;
-   private Date date;
+   private LocalDate date;
    private String classe;
    private String image;
    private ArrayList<Note> notes;
 
     public Student(Row row) {
+        this.notes = new ArrayList<>();
         this.cne = row.getCell(0).getStringCellValue();
         this.nom =row.getCell(1).getStringCellValue();
         this.prenom = row.getCell(2).getStringCellValue();
-        this.date = row.getCell(3).getDateCellValue();
+        this.date = row.getCell(3).getDateCellValue().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
         this.email = row.getCell(4).getStringCellValue();
         this.classe = row.getCell(5).getStringCellValue();
         this.phone = row.getCell(6).getStringCellValue();
@@ -54,9 +57,11 @@ public class Student {
         return phone;
     }
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
+
+   
 
     public String getClasse() {
         return classe;
@@ -65,9 +70,21 @@ public class Student {
     public String getImage() {
         return image;
     }
+    
+    public boolean sansNotes(){
+        return notes.isEmpty();
+    }
 
-   public void ajouterNotes(String path){
-       
+   public void ajouterNotes(Note note){
+       if (note.getCne().equals(cne)){
+           this.notes.add(note);
+       }
    }
+
+    public ArrayList<Note> getNotes() {
+        return notes;
+    }
+   
+   
 
 }

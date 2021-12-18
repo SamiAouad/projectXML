@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <students>
     <student CNE="B12">
-        <nom>nom1</nom>
-        <prenom>prenom1</prenom>
+        <nom>nomOneOne</nom>
+        <nom>nomOneTwo</nom>
+        <prenom>prenomOneOne</prenom>
+        <prenom>prenomOneTwo</prenom>
         <dateDeNaiss>
-            <year>100</year>
-            <month>9</month>
-            <day>3</day>
+            <year>2000</year>
+            <month>10</month>
+            <day>11</day>
         </dateDeNaiss>
         <email>prenom1@test.com</email>
         <classeName>GINF2</classeName>
-        <phone>O600000000</phone>
+        <phone>O600000001</phone>
         <image>images/B12.jpg</image>
     </student>
     <student CNE="B18">
-        <nom>nom2</nom>
-        <prenom>prenom2</prenom>
+        <nom>nomTwo</nom>
+        <prenom>prenomTwo</prenom>
         <dateDeNaiss>
-            <year>100</year>
-            <month>9</month>
-            <day>4</day>
+            <year>2000</year>
+            <month>10</month>
+            <day>12</day>
         </dateDeNaiss>
         <email>prenom2@test.com</email>
         <classeName>GINF2</classeName>
@@ -27,12 +29,12 @@
         <image>images/B18.jpg</image>
     </student>
     <student CNE="A12">
-        <nom>nom3</nom>
-        <prenom>prenom3</prenom>
+        <nom>nomThree</nom>
+        <prenom>nomThree</prenom>
         <dateDeNaiss>
-            <year>100</year>
-            <month>9</month>
-            <day>5</day>
+            <year>2000</year>
+            <month>10</month>
+            <day>13</day>
         </dateDeNaiss>
         <email>prenom3@test.com</email>
         <classeName>GINF2</classeName>
@@ -40,12 +42,12 @@
         <image>images/A12.jpg</image>
     </student>
     <student CNE="A78">
-        <nom>nom4</nom>
-        <prenom>prenom4</prenom>
+        <nom>nomFour</nom>
+        <prenom>nomFour</prenom>
         <dateDeNaiss>
-            <year>100</year>
-            <month>9</month>
-            <day>6</day>
+            <year>2000</year>
+            <month>10</month>
+            <day>14</day>
         </dateDeNaiss>
         <email>prenom@test.com</email>
         <classeName>GINF2</classeName>
@@ -53,12 +55,12 @@
         <image>images/A78.jpg</image>
     </student>
     <student CNE="D67">
-        <nom>nom5</nom>
-        <prenom>prenom5</prenom>
+        <nom>nomFive</nom>
+        <prenom>nomFive</prenom>
         <dateDeNaiss>
-            <year>100</year>
-            <month>9</month>
-            <day>0</day>
+            <year>2000</year>
+            <month>10</month>
+            <day>15</day>
         </dateDeNaiss>
         <email>prenom4@test.com</email>
         <classeName>GINF2</classeName>
@@ -66,12 +68,12 @@
         <image>images/D67.jpg</image>
     </student>
     <student CNE="Z33">
-        <nom>nom6</nom>
-        <prenom>prenom6</prenom>
+        <nom>nomSix</nom>
+        <prenom>nomSix</prenom>
         <dateDeNaiss>
-            <year>100</year>
-            <month>9</month>
-            <day>1</day>
+            <year>2000</year>
+            <month>10</month>
+            <day>16</day>
         </dateDeNaiss>
         <email>prenom5@test.com</email>
         <classeName>GINF2</classeName>
@@ -79,12 +81,12 @@
         <image>images/Z33.jpg</image>
     </student>
     <student CNE="F34">
-        <nom>nom7</nom>
-        <prenom>prenom7</prenom>
+        <nom>nomSeven</nom>
+        <prenom>nomSeven</prenom>
         <dateDeNaiss>
-            <year>100</year>
-            <month>9</month>
-            <day>2</day>
+            <year>2000</year>
+            <month>10</month>
+            <day>17</day>
         </dateDeNaiss>
         <email>prenom6@test.com</email>
         <classeName>GINF2</classeName>

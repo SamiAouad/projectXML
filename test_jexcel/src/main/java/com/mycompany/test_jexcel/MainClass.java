@@ -4,10 +4,7 @@
  */
 package com.mycompany.test_jexcel;
 
-import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
-import javax.imageio.ImageIO;
 
 
 /**
@@ -23,6 +20,8 @@ class MainClass {
             ensat.addStudents("test");
             ensat.addNotes("notes");
             ensat.generer_xml_students();
+            ensat.generer_xml_modules();
+            ensat.generer_xml_notes();
     }
     
 }
