@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT modules (module+) >
+<!ELEMENT module (moduleName, element1?, element2?, prof, dept) >
+
+<!ELEMENT moduleName (#PCDATA)>
+<!ELEMENT element1 (#PCDATA)>
+<!ELEMENT element2 (#PCDATA)>
+<!ELEMENT prof (#PCDATA)>
+<!ELEMENT dept (#PCDATA)>
+
+<!ATTLIST module codeModule CDATA #REQUIRED codeFiliere CDATA #REQUIRED >

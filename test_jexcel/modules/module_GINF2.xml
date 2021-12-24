@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <modules>
-    <module codeModule="null">
-        <moduleName>Programmation Orienté objet et XML</moduleName>
-        <element1>JAVA</element1>
-        <element2>xml</element2>
-        <prof>El Haddad</prof>
-        <dept>SIC</dept>
-        <codeFiliere>GINF2</codeFiliere>
-    </module>
+<module codeModule="GINF23" codeFiliere="GINF2">
+<moduleName>Programmation Oriente objet et XML</moduleName>
+<element1>JAVA</element1>
+<element2>xml</element2>
+<prof>El Haddad</prof>
+<dept>SIC</dept>
+</module>
+<module codeModule="GINF22" codeFiliere="GINF2">
+<moduleName>Math pour ingenieur</moduleName>
+<element1>statistique</element1>
+<element2>optimisation</element2>
+<prof>Maouen</prof>
+<dept>SIC</dept>
+</module>
 </modules>
